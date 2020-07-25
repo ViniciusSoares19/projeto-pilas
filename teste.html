@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <h1>Formulário de Contato</h1>
+        <form action="contato.html" method="POST">
+
+            <label for="nome">
+                Nome Completo: <br>
+                <input class="nome" type="text" name="nome" id="nome" placeholder="Digite seu nome" required >
+            </label> <!--visual clean label-->
+            
+            <label for="email">
+                E-mail: <br>
+                <input class="email" type="email" name="email" id="email" placeholder="Digite seu email" required >
+            </label>
+            
+             <select name="assunto" id="#" required >
+                 <option value="assunto">Assunto</option>
+                 <option value="duvidas">Dúvidas</option>
+                 <option value="elogios">Elogios</option>
+                 <option value="reclamacao">Reclamação</option>
+                 <option value="outros">Outros</option>
+             </select>
+
+             <label class="msg" for="msg">
+                 Sua mensagem: <br>
+                 <textarea class="mensagem" name="msg" id="#" placeholder="Digite sua mensagem" required></textarea>
+             </label>
+             
+             <label for="humano">
+                <input type="checkbox" id="humano">
+                 Sou uma pessoa humana.
+             </label>
+             <button class="enviar">Enviar</button>
+        </form>    
+
+    </section>
+    
+</body>
+</html>
